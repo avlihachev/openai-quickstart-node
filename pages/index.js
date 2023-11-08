@@ -8,6 +8,7 @@ export default function Home() {
 
   async function onSubmit(event) {
     event.preventDefault();
+    console.log("Submitting", animalInput);
     try {
       const response = await fetch("/api/generate", {
         method: "POST",
